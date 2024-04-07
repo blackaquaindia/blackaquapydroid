@@ -1,0 +1,41 @@
+cd "C:/Program Files/BAD/blackaquapython"
+git add .
+git commit -m "Local Update"
+git push origin
+git push origin main
+
+
+
+
+import subprocess
+import os
+
+# Change directory
+repo_path = r"C:\Program Files\BAD\blackaquapydroid"
+
+try:
+    os.chdir(repo_path)
+    
+    # Fetch changes from the remote repository
+    command_1 = 'git add .'
+    
+    # Commit changes
+    command_2 = 'git commit -m "Local Update"'
+    
+    # Push changes to the remote repository
+    command_3 = 'git push origin'
+    
+    # Push changes to the main branch
+    command_4 = 'git push origin main'
+    
+    # Combine commands
+    combined_command = f'{command_1} && {command_2} && {command_3} && {command_4}'
+    
+    # Run the commands
+    subprocess.run(combined_command, shell=True, check=True)
+    print("Git commands executed successfully.")
+except subprocess.CalledProcessError as e:
+    print(f"Everything up-to-date")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+
