@@ -1,4 +1,4 @@
-cd "C:/Program Files/BAD/blackaquapython"
+cd "C:/Program Files/BAD/blackaquapydroid"
 git add .
 git commit -m "Online Update"
 git fetch origin
@@ -9,7 +9,7 @@ git merge origin/main
 import subprocess
 
 # Change directory
-repo_path = r"C:\Program Files\BAD\blackaquapython"
+repo_path = r"C:\Program Files\BAD\blackaquapydroid"
 command_cd = f'cd "{repo_path}"'
 
 # Fetch changes from the remote repository
@@ -28,3 +28,12 @@ try:
 except subprocess.CalledProcessError as e:
     print(f"Error executing Git commands: {e}")
 
+
+
+
+termux
+cd "/storage/emulated/0/Git/blackaquapydroid/"
+git add .
+git commit -m "Online Update"
+git fetch origin
+git merge origin/main
