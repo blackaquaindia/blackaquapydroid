@@ -5,8 +5,8 @@
 	"local_directory": "C:/Program Files/BAD/Python"
   },
   "linux": {
-    "python_directory": "/data/data/com.example.myapp/data",
-    "database_directory": "/data/data/com.example.myapp/logs",
-	"local_directory": "/data/data/com.example.myapp/logs"
+    "python_directory": "/storage/emulated/0/blackaquapydroid",
+    "database_directory": "/storage/emulated/0/blackaquadatabase",
+	"local_directory": "/storage/emulated/0/blackaqualocal"
   }
 }
