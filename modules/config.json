@@ -1,0 +1,12 @@
+{
+  "windows": {
+    "python_directory": "C:/BlackAquaPydroid",
+    "database_directory": "C:/BlackAquaPython",
+	"local_directory": "C:/Program Files/BAD/Python"
+  },
+  "linux": {
+    "python_directory": "/data/data/com.example.myapp/data",
+    "database_directory": "/data/data/com.example.myapp/logs",
+	"local_directory": "/data/data/com.example.myapp/logs"
+  }
+}
