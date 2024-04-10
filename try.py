@@ -24,5 +24,12 @@ cl = Client()
 # Prompt user to enter a username
 project = input("Please enter your username: ").strip()
 
-exec(open(f"config.py").read())
+try:
+    exec(open("C:/blackaquapydroid/modules/config.py").read())
+except FileNotFoundError:
+    try:
+        exec(open("/storage/emulated/0/blackaquapydroid/modules/config.py").read())
+    except FileNotFoundError:
+        pass
+
 exec(open(f"{python_directory}/modules/create_device.py").read())

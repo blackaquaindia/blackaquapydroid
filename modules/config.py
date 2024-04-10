@@ -1,9 +1,12 @@
 import json
 import platform
 
-# Load config file
-config_file = "C:/BlackAquaPydroid/modules/config.json"
-with open(config_file) as f: config = json.load(f)
+try:
+    with open("C:/blackaquapydroid/modules/config.json") as f:
+        config = json.load(f)
+except FileNotFoundError:
+    with open("/storage/emulated/0/blackaquapydroid/modules/config.json") as f:
+        config = json.load(f)
 
 # Determine current platform
 current_platform = platform.system().lower()
