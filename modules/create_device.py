@@ -122,4 +122,4 @@ with open(f'{database_directory}/devices/{project}.json', 'w') as f:
 
 # Wait for the session to be fully initialized
 print(f"Device Created Successfully: {project}")
-time.sleep(3)
+time.sleep(1)
